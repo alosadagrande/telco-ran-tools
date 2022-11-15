@@ -4,7 +4,7 @@
 
 We want to focus on target servers where only one disk is available and no external disk drive is possible to be attached. Assisted installer, which is part of the ZTP flow, leverages the coreos-installer utility to write RHCOS to disk. This means that if we boot from a pre-installed RHCOS on a single disk, the utility will complain because the device is in use and cannot finish the process of writing. Then, the only way we have to run the full pre-caching process is by booting from a live ISO and using the factory-cli tool from a container image to partition and pre-cache all the artifacts required.
 
-:warning: RHCOS requires the disk to not be in use when is about to be written by an RHCOS image. Reinstalling onto the current boot disk is an unusual requirement, and the coreos-installer utility wasn't designed for it.
+:warning: RHCOS requires the disk not to be in use when is about to be written by an RHCOS image. Reinstalling onto the current boot disk is an unusual requirement, and the coreos-installer utility wasn't designed for it.
 
 ## Boot from RHCOS live
 
