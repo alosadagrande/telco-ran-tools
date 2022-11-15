@@ -6,7 +6,7 @@ As mentioned, in order to address the bandwidth limitations, a factory pre-stagi
 
 This downloading stage manage both the pull of the OCP release images, and if required, it can also manage the download of the operators included in the distributed unit (DU) profile for telco 5G RAN sites. More advanced scenarios can be set up too, such as [downloading operators images from disconnected registries](#custom-precaching-for-disconnected-environments).
 
-> :warning: Notice that the list of operators can vary depending on the OCP version we are about to install. For instance, in OCP 4.12 the DU profile adds AMQ, LVM and the baremetal-event (BMER) operators compared to 4.11.
+> :warning: Notice that the list of operators can vary depending on the OCP version we are about to install. For instance, in OCP 4.12 the DU profile adds Logical Volume Manager operator (LVMO) and the baremetal-event (BMER) operators compared to 4.11.
 
 ## Pre-requisites
 
